@@ -1,57 +1,312 @@
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color:white;
-}
+    margin: 0;
+    padding:0;
+    font-size: 1.5em;
+    background-image: url("afbeeldingen/darkbg.avif");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 
-h1{
-    font-size: 8em;
-    font-family: Hahmlet;
-    background-color:rgb(124, 0, 0);
-    border: solid 12px rgb(44, 44, 44);
-    padding: 20px 20px;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
+   
+
 }
 
 @font-face {
     font-family: Hahmlet;
     src: url(Fonts/Hahmlet/Hahmlet-VariableFont_wght.ttf);
 }
-p.searchbar{
-    background-color: white;
-    padding: 12px 12px 12px 12px;
-    color:rgb(124, 0, 0);
-    border: solid 6px rgb(44, 44, 44);
-    font-size: 0,5em;
-    font-weight: bolder;
-    
-    
-}
 
-.menu{
+
+.Menu{
     list-style: none;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-   
-
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 1em;
+    
 }
 
-.menu li{
-    border: 2px solid rgb(124, 0, 0);
-    padding:10px;
-    width: 150px;
+
+
+.Menu li{
+    color: white;
+    text-decoration: none;
+    transition: all 500ms ease;
+    
+}
+
+.Menu li a{
+    color: inherit;
+    text-decoration: none;
+    font-display: block;
+    outline: none;
+    background-color: rgb(38, 38, 38);
+    border: solid 4px rgb(117, 117, 117);
+    padding: 0.5em 1.8em;
+}
+
+.Menu li a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+.menu li :active{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);  
+}
+
+
+h1{
+    font-size: 4em;
+    font-family: Hahmlet;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+    justify-content: center;
+    padding-left: 1em;
+    padding-right: 1em;
     text-align: center;
-    margin-left: 90px;
-    margin-right: 90px;
+    width: fit-content;
+    border-bottom: solid 8px  rgb(117, 117, 117);;
+    
 }
 
-li{
-    background-color: rgb(44, 44, 44);
+
+h3{
+    font-style: oblique;
+}
+
+.omschrijving{
+    display: flex;
+    align-items: center;
+    
+}
+
+.omschrijving p{
+    flex: 1;
+
+}
+
+.omschrijving img{
+    max-width: 40%;
+    animation-name: verschijn;
+    animation-duration: 4s;
+    border: solid 4px white;
+}
+    
+
+
+@keyframes verschijn{
+
+    from{
+    opacity: 0;
+}
+
+to{
+    opacity: 1;
+}
+
+}
+  
+.populair1{
+    display: flex;
+    align-items: center;
+}
+
+.populair1 p{
+    flex: 1;
+}
+
+.populair1 img{
+    max-width: 30%;
+    animation-name: verschijn;
+    animation-duration: 4s;
+    border: solid 4px white;
+}
+
+.populair2{
+    display: flex;
+    align-items: center;
+}
+
+.populair2 p{
+    flex: 1;
+}
+
+.populair2 img{
+    max-width: 30%;
+    animation-name: verschijn;
+    animation-duration: 4s;
+    border: solid 4px white;
+}
+
+
+.populair3{
+    display: flex;
+    align-items: center;
+}
+
+.populair3 p{
+    flex: 1;
+}
+
+ .populair3 img{
+    max-width: 30%;
+    animation-name: verschijn;
+    animation-duration: 4s;
+    border: solid 4px white;
+}
+
+.spotify{
+    display: flex;
+    align-items: center;
+}
+
+.spotify p{
+    flex: 1;
+}
+
+.spotify img{
+    max-width: 30%;
+    animation-name: verschijn;
+    animation-duration: 4s;
+    border: solid 4px white;
+}
+
+.soundcloud{
+    display: flex;
+    align-items: center;
+}
+    
+.soundcloud p{
+    flex: 1;
+}
+    
+.soundcloud img{
+    max-width: 30%;
+    animation-name: verschijn;
+    animation-duration: 4s;
+    border: solid 4px white;
+}
+
+.itunes{
+    display: flex;
+    align-items: center;
+}
+
+.itunes p{
+    flex: 1;
+}
+
+.itunes img{
+    max-width: 30%;
+    animation-name: verschijn;
+    animation-duration: 4s;
+    border: solid 4px white;
+}
+
+.antagonist{
+    display: flex;
+    align-items: center;
+}
+
+.antagonist p{
+    flex: 1;
+}
+
+.antagonist img{
+    max-width: 30%;
+    animation-name: verschijn;
+    animation-duration: 4s;
+    border: solid 4px white;   
+}
+
+.field{
+    display: flex;
+    align-items: center;
+}
+
+.field p{
+    flex: 1;
+}
+
+.field img{
+    max-width: 30%;
+    animation-name: verschijn;
+    animation-duration: 4s;
+    border: solid 4px white;    
+}
+
+.afas{
+    display: flex;
+    align-items: center;
+}
+
+.afas p{
+    flex: 1;
+}
+
+.afas img{
+    max-width: 30%;
+    animation-name: verschijn;
+    animation-duration: 4s;
+    border: solid 4px white;    
+}
+
+footer{
+ 
+    background-color: rgb(38, 38, 38);
+    border: solid 4px rgb(117, 117, 117);
+    display: flex;
+    flex-direction: row;
+    margin-top: 50%;
+    padding: 4px;
+    justify-content: space-between;
+}
+  
+.info{
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: flex-end;
+    float: right;
+}
+  
+.bron {
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    float: left; 
+    transition: all 100ms;
+}
+  
+  
+.bron a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(250, 249, 249);
+    transition: all 200ms ease-in;
+}
+
+.bron a:hover{
+    color:rgb(105, 105, 105);
+    transform: scale(2);
+  
+}
+
+.bron a:active{
+    transform: scale(2);
 }
